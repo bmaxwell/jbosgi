@@ -69,7 +69,7 @@ public class DocumentBuilderTestCase {
 
     @Deployment
     public static JavaArchive createdeployment() {
-        final JavaArchive archive = ShrinkWrap.create(JavaArchive.class, "example-xml-parser");
+        final JavaArchive archive = ShrinkWrap.create(JavaArchive.class, "example-dom-parser");
         archive.addClasses(RepositorySupport.class, XMLParserSupport.class);
         archive.addAsResource("xml/example-xml-parser.xml", "example-xml-parser.xml");
         archive.addAsManifestResource(RepositorySupport.BUNDLE_VERSIONS_FILE);
